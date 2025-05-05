@@ -73,6 +73,7 @@ Assets/StreamingAssets/aa/
 *.sln
 *.user
 *.userprefs
+*.csproj
 *.pidb
 *.pdb
 *.mdb
