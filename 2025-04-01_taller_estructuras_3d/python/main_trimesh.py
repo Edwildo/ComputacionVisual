@@ -1,7 +1,13 @@
+import os
 import trimesh
 
+# Obtener ruta absoluta del archivo .glb desde el script actual
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, "modelos", "kawashaki_ninja_h2.glb")
+
 # Cargar la escena
-scene = trimesh.load("modelos/kawashaki_ninja_h2.glb")
+scene = trimesh.load(model_path)
+
 
 # Si es una escena con múltiples geometrías
 if isinstance(scene, trimesh.Scene):
@@ -18,10 +24,10 @@ else:
     mesh = scene
 
 # Mostrar la información estructural
-print("📊 Información del modelo:")
-print(f"✔️ Vértices: {len(mesh.vertices)}")
-print(f"✔️ Aristas:  {len(mesh.edges)}")
-print(f"✔️ Caras:    {len(mesh.faces)}")
+print("Información del modelo:")
+print(f"Vértices: {len(mesh.vertices)}")
+print(f"Aristas:  {len(mesh.edges)}")
+print(f"Caras:    {len(mesh.faces)}")
 
 # Mostrar la visualización
 mesh.show()
