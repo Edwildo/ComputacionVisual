@@ -86,7 +86,6 @@ Assets/StreamingAssets/aa/
 sysinfo.txt
 
 # === GIFs y Media temporales ===
-*.gif
 *.mp4
 *.avi
 *.mov
