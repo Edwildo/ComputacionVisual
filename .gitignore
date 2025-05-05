@@ -419,4 +419,100 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/python,windows,react,node,unity
+### 🧰 Unity GitIgnore Completo y Estandarizado ###
+
+# === Archivos temporales de Unity ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+CrashReports/
+
+# === Cache del Editor ===
+.vs/
+.gradle/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.pidb
+*.booproj
+*.sln
+*.tmp
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DS_Store
+
+# === Addressables y StreamingAssets generados ===
+Assets/StreamingAssets/aa/
+Assets/StreamingAssets/aa.meta
+Assets/AddressableAssetsData/*/*.bin*
+
+# === Meta y Debug ===
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.stackdump
+sysinfo.txt
+
+# === Archivos de construcción ===
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# === Archivos de cache de Rider / JetBrains ===
+Assets/Plugins/Editor/JetBrains*
+.idea/
+*.sln.DotSettings
+
+# === Ignora paquetes descargados o caché de dependencias ===
+Packages/manifest.json.meta
+Packages/packages-lock.json
+.yarn/
+node_modules/
+npm-debug.log*
+
+# === Archivos de entorno y configuración local ===
+.env
+*.local
+.env.*
+
+# === Archivos de configuración personal ===
+*.sublime*
+*.swp
+*.bak
+
+# === Unity Cloud Build ===
+.cloudbuild/
+
+# === Archivos del sistema operativo ===
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# === Logs y reportes ===
+*.log
+*.log.*
+*.report.json
+
+# === Jupyter / Python si se usa en proyectos híbridos ===
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# === VSCode settings si no deseas compartirlos ===
+.vscode/
+
+# === Otros ===
+.DS_Store
+*.lnk
